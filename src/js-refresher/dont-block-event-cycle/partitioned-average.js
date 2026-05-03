@@ -3,7 +3,7 @@ function asyncAvg(n, avgCB) {
     let sum = 0;
     function help(i, cb) {
         sum += i;
-        if (i == n) {
+        if (i === n) {
             cb(sum);
             return;
         }
